@@ -121,6 +121,7 @@ body{
 .encriptar:hover, .desencriptar:hover{
     transform: scale(1.05);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .desencriptar:active{
@@ -139,14 +140,72 @@ body{
     box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.8);
     margin: 3.9vh 2.7vw;
     padding: 3.1vh 2.2vw;
+    position: relative;
 }
 
 .muñeco{
     width: 24vw;
-    
     margin-top: 16.9vh;
 }
 
 .no-encontrado{
     font-size: 24px;
+}
+
+/*.requerimiento{
+    display: none;
+}*/
+
+.div-resultado{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.texto-resultante{
+    width: 100%;
+    height: 85%;
+    font-size: 24px;
+    line-height: 150%;
+    border: none;
+    overflow-wrap: break-word;
+    background: none;
+    color: #495057;
+    resize: none;
+}
+
+.texto-resultante:focus{
+    outline: none;
+}
+
+.copiar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto 7vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 15vw;
+    height: 7.050%;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    color: #0A3871;
+    transition: 0.5s;
+    transform: translate(-50%, 50%);
+}
+
+.copiar:hover{
+    transform: translate(-50%, 50%) scale(1.05);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copiar:active{
+    background: #0A3871;
+    color: #ffffff;
+    opacity: 0.7;
 }

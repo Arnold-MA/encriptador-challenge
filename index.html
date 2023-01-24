@@ -13,7 +13,7 @@
         <div class="principal">
             <img class="logo" src="img/Logo.png" alt="Logo de Alura">
 
-            <textarea class="textfield" placeholder="Ingrese el texto aquí"></textarea>          
+            <textarea class="textfield" id="textfield" placeholder="Ingrese el texto aquí"></textarea>          
     
             <div class="acciones">
                 <div class="aviso">
@@ -22,18 +22,29 @@
                 </div>
         
                 <div class="botones-accion">
-                    <button class="encriptar">Encriptar</button>
+                    <button class="encriptar" id="encriptar" onclick="encriptar()">Encriptar</button>
         
-                    <button class="desencriptar">Desencriptar</button>
+                    <button class="desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </div>
             
         </div>
 
         <div class="resultado">
-            <img class="muñeco" src="img/Muñeco.png" alt="Imagen de muñeco con lupa">
-            <h3 class="no-encontrado">Ningún mensaje fue encontrado</h3>
-            <p class="requerimiento">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="resultado-inicial" id="resultado-inicial">
+                <img class="muñeco" id="muñeco" src="img/Muñeco.png" alt="Imagen de muñeco con lupa">
+                <h3 class="no-encontrado" id="no-encontrado">Ningún mensaje fue encontrado</h3>
+                <p class="requerimiento" id="requerimiento">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            
+            
+            <div class="div-resultado" id="div-resultado">
+                <textarea class="texto-resultante" id="texto-resultante" readonly>dsasddddddddddddddda sddddddds a s ds sasd da  dsdsbd dsdada d dsadasd dsa   dsa   dasdadsa dasd  dsa d  dasdadadsa dasdasd dadsads  dasd d sada  dsad  dsadadad adasdas d da sd sad asda sada sad asd sad as dasd asd a sad  ad asasd s sas ads dw ads w dadsf ad fas as daw ads q dqsa dq sd q dqs</textarea>  
+                <!--<p class="texto-resultante" id="texto-resultante">dsasddddddddddddddda sddddddds a s ds sasd da  dsdsbd dsdada d dsadasd dsa   dsa   dasdadsa dasd  dsa d  dasdadadsa dasdasd dadsads  dasd d sada  dsad  dsadadad adasdas d da sd sad asda sada sad asd sad as dasd asd a sad  ad asasd s sas ads dw ads w dadsf ad fas as daw ads q dqsa dq sd q dqs dq wea dsw q q hjhj jhjh yyg yjhhg ihuhguy7 uughuyg 8 8h8 q88h8 q8y8y y8y8 jjii iiyi yiyiy tytyt uyityui hjhj hii khk jkjk jljklj hjhj gygyu hjhjh yuyui jhjh yiuyi kjk ghgh iui sa sa sa asa sa sa aas a sa as as as a as as as as as as as as as as as as as as as as as a sa sas as as a sa sa sa s as as a sa sa s as as a sa sa s</p>-->
+            
+            
+                <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
         </div>
         
     </div>
